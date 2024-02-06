@@ -1,0 +1,641 @@
+<!--注释-->
+
+
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>三乄言引导页</title>
+
+    <meta http-equiv="Cache-Control" content="三乄言引导页面">
+    <meta name="author" content="三乄言">
+    <meta name="keywords" content="三乄言引导页|三乄言">
+    <meta name="description" content="三乄言精美个人引导页面|三乄言">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/css/mdui.min.css">
+    <title>三乄言引导页</title>
+</head>
+
+
+<!--鼠标点击特效-->
+
+<script>
+    var fnTextPopup = function (arr, options) {
+        // arr参数是必须的
+        if (!arr || !arr.length) {
+            return;
+        }
+        // 主逻辑
+        var index = 0;
+        document.documentElement.addEventListener('click', function (event) {
+            var x = event.pageX, y = event.pageY;
+            var eleText = document.createElement('span');
+            eleText.className = 'text-popup';
+            this.appendChild(eleText);
+            if (arr[index]) {
+                eleText.innerHTML = arr[index];
+            } else {
+                index = 0;
+                eleText.innerHTML = arr[0];
+            }
+            // 动画结束后删除自己
+            eleText.addEventListener('animationend', function () {
+                eleText.parentNode.removeChild(eleText);
+            });
+            // 位置
+            eleText.style.left = (x - eleText.clientWidth / 2) + 'px';
+            eleText.style.top = (y - eleText.clientHeight) + 'px';
+            // index递增
+            index++;
+        });
+    };
+    fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
+</script>
+<!--鼠标点击特效底部-->
+
+<!--鼠标点击特效-->
+<!--方法1：调用自己下载下来的代码-->
+<script type="text/javascript" src="js/mouse_slide.js"></script>
+
+<!--&lt;!&ndash;方法2：直接引用服务器上的代码&ndash;&gt;-->
+<!--<script type="text/javascript" src="https://www.liuzehe.top/upload/bkjs/mouse_slide.js"></script>-->
+<!--鼠标点击特效底部-->
+
+
+<body>
+<!--弹窗-->
+<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script>
+    swal('本站状态:稳定运行中','\n\n感谢您来到本站，祝你生活愉快！\n\n已经尽最大的努力去适配手机端了（委屈）\n\n⭐ 请用电脑浏览器访问本站 ⭐\n\n⭐或使用QQ浏览器切换电脑UA访问本站⭐','success'); function AddFavorite(title, url) {
+        try {
+            window.external.addFavorite(url, title);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(title, url,);
+            }
+            catch (e) {
+                alert("抱歉，您所使用的浏览器无法完成此操作。");
+            }
+        }
+    }
+</script>
+<!--弹窗底部-->
+
+
+
+<!-- 过年了，加个灯笼，祝大家新年快乐。。灯笼过了正月十五再取。。 -->
+<style>
+    .ct2 .mn {width:770px;}.ct2 .sd {width:218px;}
+</style>
+<div id="wp" class="wp">
+    <div class="xnkl">
+        <div class="deng-box2">
+            <div class="deng">
+                <div class="xian">
+                </div>
+                <div class="deng-a">
+                    <div class="deng-b">
+                        <div class="deng-t">
+                            节
+                        </div>
+                    </div>
+                </div>
+                <div class="shui shui-a">
+                    <div class="shui-c">
+                    </div>
+                    <div class="shui-b">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deng-box3">
+            <div class="deng">
+                <div class="xian">
+                </div>
+                <div class="deng-a">
+                    <div class="deng-b">
+                        <div class="deng-t">
+                            春
+                        </div>
+                    </div>
+                </div>
+                <div class="shui shui-a">
+                    <div class="shui-c">
+                    </div>
+                    <div class="shui-b">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deng-box1">
+            <div class="deng">
+                <div class="xian">
+                </div>
+                <div class="deng-a">
+                    <div class="deng-b">
+                        <div class="deng-t">
+                            乐
+                        </div>
+                    </div>
+                </div>
+                <div class="shui shui-a">
+                    <div class="shui-c">
+                    </div>
+                    <div class="shui-b">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="deng-box">
+            <div class="deng">
+                <div class="xian">
+                </div>
+                <div class="deng-a">
+                    <div class="deng-b">
+                        <div class="deng-t">
+                            快
+                        </div>
+                    </div>
+                </div>
+                <div class="shui shui-a">
+                    <div class="shui-c">
+                    </div>
+                    <div class="shui-b">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style type="text/css">
+        @media screen and (max-width: 768px) {.xnkl{display:none; }}.deng-box
+        { position: fixed; top: -40px; right: 150px; z-index: 9999; pointer-events:
+                    none;}.deng-box1 { position: fixed; top: -30px; right: 10px; z-index: 9999;
+                              pointer-events: none}.deng-box2 { position: fixed; top: -40px; left: 150px;
+                                                       z-index: 9999; pointer-events: none}.deng-box3 { position: fixed; top:
+                -30px; left: 10px; z-index: 9999; pointer-events: none}.deng-box1 .deng,.deng-box3
+        .deng { position: relative; width: 120px; height: 90px; margin: 50px; background:
+                #d8000f; background: rgba(216,0,15,.8); border-radius: 50% 50%; -webkit-transform-origin:
+                50% -100px; -webkit-animation: swing 5s infinite ease-in-out; box-shadow:
+                -5px 5px 30px 4px #fc903d}.deng { position: relative; width: 120px; height:
+                90px; margin: 50px; background: #d8000f; background: rgba(216,0,15,.8);
+                                              border-radius: 50% 50%; -webkit-transform-origin: 50% -100px; -webkit-animation:
+                    swing 3s infinite ease-in-out; box-shadow: -5px 5px 50px 4px #fa6c00}.deng-a
+                                                                                         { width: 100px; height: 90px; background: #d8000f; background: rgba(216,0,15,.1);
+                                                                                             margin: 12px 8px 8px 8px; border-radius: 50% 50%; border: 2px solid #dc8f03}.deng-b
+                                                                                                                                                                         { width: 45px; height: 90px; background: #d8000f; background: rgba(216,0,15,.1);
+                                                                                                                                                                             margin: -4px 8px 8px 26px; border-radius: 50% 50%; border: 2px solid #dc8f03}.xian
+                                                                                                                                                                                                                                                          { position: absolute; top: -20px; left: 60px; width: 2px; height: 20px;
+                                                                                                                                                                                                                                                              background: #dc8f03}.shui-a { position: relative; width: 5px; height: 20px;
+                                                                                                                                                                                                                                                                                      margin: -5px 0 0 59px; -webkit-animation: swing 4s infinite ease-in-out;
+                                                                                                                                                                                                                                                                                      -webkit-transform-origin: 50% -45px; background: orange; border-radius:
+                    0 0 5px 5px}.shui-b { position: absolute; top: 14px; left: -2px; width:
+                10px; height: 10px; background: #dc8f03; border-radius: 50%}.shui-c { position:
+                absolute; top: 18px; left: -2px; width: 10px; height: 35px; background:
+                orange; border-radius: 0 0 0 5px}.deng:before { position: absolute; top:
+                -7px; left: 29px; height: 12px; width: 60px; content: " "; display: block;
+                                                     z-index: 999; border-radius: 5px 5px 0 0; border: solid 1px #dc8f03; background:
+                    orange; background: linear-gradient(to right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng:after
+                                                                                                        { position: absolute; bottom: -7px; left: 10px; height: 12px; width: 60px;
+                                                                                                            content: " "; display: block; margin-left: 20px; border-radius: 0 0 5px
+            5px; border: solid 1px #dc8f03; background: orange; background: linear-gradient(to
+            right,#dc8f03,orange,#dc8f03,orange,#dc8f03)}.deng-t { font-family: 黑体,Arial,Lucida
+        Grande,Tahoma,sans-serif; font-size: 3.2rem; color: #dc8f03; font-weight:
+                700; line-height: 85px; text-align: center}.night .deng-box,.night .deng-box1,.night
+        .deng-t { background: 0 0!important}@-moz-keyframes swing { 0% { -moz-transform:
+                rotate(-10deg) } 50% { -moz-transform: rotate(10deg) } 100% { -moz-transform:
+                rotate(-10deg) }}@-webkit-keyframes swing { 0% { -webkit-transform: rotate(-10deg)
+        } 50% { -webkit-transform: rotate(10deg) } 100% { -webkit-transform: rotate(-10deg)
+                                                   }}
+    </style>
+
+
+
+
+<div id="bg">
+    <div class="backstretch"></div>
+</div>
+<div class="container">
+
+    <div id="audio" class="cywl">
+        <img src="https://external-30160.picsz.qpic.cn/39ff4096c204652d7c7b56418fb37631" width="65px" height="65px" id="d" onclick="c();">
+    </div>
+
+
+    <header id="header">
+        <nav class="menu">
+            <div class="list-h">
+                <a  onclick="index()"><svg t="1664115306404" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                           xmlns="http://www.w3.org/2000/svg" p-id="2118" width="50" height="50">
+                    <path
+                            d="M784 912H240a128 128 0 0 1-128-128V419.66a128 128 0 0 1 55.91-105.77l272-185.4a128 128 0 0 1 144.18 0l272 185.4A128 128 0 0 1 912 419.66V784a128 128 0 0 1-128 128z"
+                            fill="#FFFFFF" p-id="2119"></path>
+                    <path
+                            d="M784 896H272a112 112 0 0 1-112-112V427.24a112 112 0 0 1 49-92.58l242.63-165.21A112 112 0 0 1 574 167l269.3 168.11a112 112 0 0 1 52.7 95V784a112 112 0 0 1-112 112z"
+                            fill="#FFE07A" p-id="2120"></path>
+                    <path
+                            d="M784 928H240c-79.4 0-144-64.6-144-144V419.66a143.91 143.91 0 0 1 62.89-119l272-185.4a144 144 0 0 1 162.22 0l272 185.4a143.91 143.91 0 0 1 62.89 119V784c0 79.4-64.6 144-144 144zM512 122.12a111.8 111.8 0 0 0-63.08 19.59l-272 185.4A111.93 111.93 0 0 0 128 419.66V784a112.12 112.12 0 0 0 112 112h544a112.12 112.12 0 0 0 112-112V419.66a111.93 111.93 0 0 0-48.92-92.55l-272-185.4A111.8 111.8 0 0 0 512 122.12z"
+                            fill="#333333" p-id="2121"></path>
+                    <path d="M256 449m32 0l128 0q32 0 32 32l0 0q0 32-32 32l-128 0q-32 0-32-32l0 0q0-32 32-32Z"
+                          fill="#333333" p-id="2122"></path>
+                    <path d="M432 656h160a64 64 0 0 1 64 64v192H368V720a64 64 0 0 1 64-64z" fill="#FFFFFF"
+                          p-id="2123"></path>
+                    <path d="M464 704h128a48 48 0 0 1 48 48v144H464a48 48 0 0 1-48-48v-96a48 48 0 0 1 48-48z"
+                          fill="#FF9580" p-id="2124"></path>
+                    <path
+                            d="M672 928H352V720a80.09 80.09 0 0 1 80-80h160a80.09 80.09 0 0 1 80 80z m-288-32h256V720a48.05 48.05 0 0 0-48-48H432a48.05 48.05 0 0 0-48 48z"
+                            fill="#333333" p-id="2125"></path>
+                </svg>
+                    <p>首页</p>
+                </a>
+
+                <a onclick="about()"><svg t="1664115194296" class="icon" viewBox="0 0 1024 1024"
+                                          version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8218" width="50" height="50">
+                    <path
+                            d="M80 144m128 0l608 0q128 0 128 128l0 480q0 128-128 128l-608 0q-128 0-128-128l0-480q0-128 128-128Z"
+                            fill="#FFFFFF" p-id="8219"></path>
+                    <path
+                            d="M128 193m112 0l576 0q112 0 112 112l0 447q0 112-112 112l-576 0q-112 0-112-112l0-447q0-112 112-112Z"
+                            fill="#A89BFA" p-id="8220"></path>
+                    <path
+                            d="M816 896H208c-79.4 0-144-64.6-144-144V272c0-79.4 64.6-144 144-144h608c79.4 0 144 64.6 144 144v480c0 79.4-64.6 144-144 144zM208 160A112.12 112.12 0 0 0 96 272v480a112.12 112.12 0 0 0 112 112h608a112.12 112.12 0 0 0 112-112V272a112.12 112.12 0 0 0-112-112z"
+                            fill="#333333" p-id="8221"></path>
+                    <path d="M352 416m-112 0a112 112 0 1 0 224 0 112 112 0 1 0-224 0Z" fill="#FFFFFF"
+                          p-id="8222"></path>
+                    <path d="M368 432m-80 0a80 80 0 1 0 160 0 80 80 0 1 0-160 0Z" fill="#FFBF80" p-id="8223">
+                    </path>
+                    <path
+                            d="M352 544a128 128 0 1 1 128-128 128.14 128.14 0 0 1-128 128z m0-224a96 96 0 1 0 96 96 96.11 96.11 0 0 0-96-96z"
+                            fill="#333333" p-id="8224"></path>
+                    <path
+                            d="M528 670a167.6 167.6 0 0 0-56.48-125.64 160 160 0 0 1-231.42 8A167.43 167.43 0 0 0 192 670a66 66 0 0 0 66 66h204a66 66 0 0 0 66-66z"
+                            fill="#FFFFFF" p-id="8225"></path>
+                    <path
+                            d="M528.64 681.13c0-29.5-6.79-51.78-21-72.53a32.08 32.08 0 0 0-43.26-9.27c-28.74 17.77-60.41 32.55-95.35 32.55-30.44 0-70.44-4.68-100.45-14.61a32 32 0 0 0-41.1 23.27c-2.8 12-3.51 25.46-3.51 40.59 0 21.87 15 39.23 32.84 39.23h212c25.2 0 59.84-17.36 59.84-39.23z"
+                            fill="#FFBF80" p-id="8226"></path>
+                    <path
+                            d="M462 752H258a82.1 82.1 0 0 1-82-82 183 183 0 0 1 52.68-128.87 16 16 0 0 1 22.61-0.22 144 144 0 0 0 208.28-7.19 16 16 0 0 1 22.57-1.32A184.21 184.21 0 0 1 544 670a82.1 82.1 0 0 1-82 82zM241.41 574.92A150.92 150.92 0 0 0 208 670a50.06 50.06 0 0 0 50 50h204a50.06 50.06 0 0 0 50-50 152.19 152.19 0 0 0-40.27-103 176 176 0 0 1-230.32 7.95z"
+                            fill="#333333" p-id="8227"></path>
+                    <path d="M592 384m32 0l160 0q32 0 32 32l0 0q0 32-32 32l-160 0q-32 0-32-32l0 0q0-32 32-32Z"
+                          fill="#333333" p-id="8228"></path>
+                    <path d="M656 576m32 0l96 0q32 0 32 32l0 0q0 32-32 32l-96 0q-32 0-32-32l0 0q0-32 32-32Z"
+                          fill="#333333" p-id="8229"></path>
+                </svg>
+                    <p>关于</p>
+                </a>
+
+                <a href="网站" target="_blank"><svg t="1664115959373" class="icon"
+                                                  viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1548"
+                                                  width="50" height="50">
+                    <path d="M512 512m-420 0a420 420 0 1 0 840 0 420 420 0 1 0-840 0Z" fill="#FFFFFF"
+                          p-id="1549"></path>
+                    <path d="M534.5 534.5m-397.5 0a397.5 397.5 0 1 0 795 0 397.5 397.5 0 1 0-795 0Z"
+                          fill="#A89BFA" p-id="1550"></path>
+                    <path d="M677 347.9375L272 482l195 75 75 195 135-404.0625z" fill="#FFFFFF" p-id="1551">
+                    </path>
+                    <path
+                            d="M618.36875001 402.359375l-237.75000002 82.92187501a15 15 0 0 0-1.74374999 27.59062499l88.03125001 43.828125L542 722l95.765625-300.9375a15 15 0 0 0-19.39687501-18.703125z"
+                            fill="#FFBF80" p-id="1552"></path>
+                    <path
+                            d="M512 947A435.103125 435.103125 0 0 1 342.678125 111.190625a435.1125 435.1125 0 0 1 338.65312501 801.61875A432.3375 432.3375 0 0 1 512 947z m0-840C288.678125 107 107 288.678125 107 512s181.678125 405 405 405 405-181.678125 405-405S735.321875 107 512 107z"
+                            fill="#333333" p-id="1553"></path>
+                    <path
+                            d="M542 767a15 15 0 0 1-13.996875-9.61875001l-72.60937501-188.77499998-188.77499998-72.60937501a15 15 0 0 1 0.66562499-28.2375l405-134.0625a15 15 0 0 1 18.94687499 18.99375l-135 404.0625A15 15 0 0 1 542.3375 767zM316.540625 483.059375l155.84062499 59.94375a15 15 0 0 1 8.61562501 8.61562501l60 156.01874999L653.28125001 371.590625z"
+                            fill="#333333" p-id="1554"></path>
+                </svg>
+                    <p>博客</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--随机字体颜色-->
+    <style>
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        .xxxpan-text {
+            animation: change 5s infinite;
+            font-weight: 800;
+        }
+        @keyframes change {
+            0% {
+                color:#FFFF00;
+            }
+            25% {
+                color:#00FF00;
+            }
+            50% {
+                color:#00FFFF;
+            }
+            75% {
+                color:#00FF00;
+            }
+            100% {
+                color:#FFFF00;
+            }
+        }
+        @media screen and (max-width: 980px) {
+            .copyright {
+                display: none;
+            }
+            .Vidage {
+                display: none;
+            }
+        }
+    </style>
+
+<!--    <div class="inner xxxpan-text">-->
+<!--        <p>⭐ 请用电脑浏览器访问本站 ⭐</p>-->
+<!--        <p>或使用QQ浏览器切换电脑UA访问本站</p>-->
+<!--        <p></p>-->
+<!--    </div>-->
+    <!--随机字体颜色底部-->
+
+<!--头像-->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <img src="https://q1.qlogo.cn/g?b=qq&nk=3607570191&s=640"alt="" />
+            </div>
+            <!--头像底部-->
+
+                <!--字体颜色-->
+            <div class="inner xxxpan-text">
+                <!--字体颜色底部-->
+            <div class="quote">
+                <i class="iconfont icon-Artboard1"></i>
+                <strong>三乄言 </strong>
+                <span>介绍</span>
+
+
+                <i class="iconfont icon-Artboard"></i>
+            </div>
+            <div class="segment" style="border-color: rgb(245, 150, 170);" id="index">
+                <div class="label" style="color: rgb(245, 150, 170);">
+                    <span>说说</span>
+                </div>
+                <div class="markdown index">
+                    <p>All beginnings come at the expense of the end, why not look at the prosperity of the world?</p>
+                </div>
+            </div>
+
+            <div class="segment" style="border-color: rgb(245, 150, 170);display:none" id="about">
+                <div class="label" style="color: rgb(245, 150, 170);">
+                    <span>关于</span>
+                </div>
+                <div class="markdown" id="abut">
+
+                    <!--        <div class="rin-tr"></div>-->
+                    <div class="rin-card-part" id="fighting">
+                        <div class="rin-card-title2 mdui-typo"><a href="#fighting">#</a> 战斗力</div>
+                        <div class="mdui-container">
+                            <div class="mdui-row">
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '制作网站的能力:非常菜'}">
+
+                                    <div class="rin-progress-title">
+                                        HTML/CSS
+                                    </div>
+
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 15%;"></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '快去new一个对象吧，这样你就能面向对象编程了， 多么幸福!'}">
+                                    <div class="rin-progress-title">
+                                        Java
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 30%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '有手就行'}">
+                                    <div class="rin-progress-title">
+                                        易语言？裕语言？
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mdui-row">
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4" mdui-tooltip="{content: '愿你刷机半生，归来仍是MIUI'}">
+                                    <div class="rin-progress-title">
+                                        root，刷机，变砖
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '让事情发生的能力'}">
+                                    <div class="rin-progress-title">
+                                        搞事情
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '对他人的情感深度'}">
+                                    <div class="rin-progress-title">
+                                        情感
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 35%;"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mdui-row">
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '社交能力<del>(社恐</del>'}">
+                                    <div class="rin-progress-title">
+                                        社交
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 20%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '做事情的耐心程度'}">
+                                    <div class="rin-progress-title">
+                                        耐心
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 35%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+                                     mdui-tooltip="{content: '对这个世界热爱的程度'}">
+                                    <div class="rin-progress-title">
+                                        世界
+                                    </div>
+                                    <div class="mdui-progress">
+                                        <div class="mdui-progress-determinate" style="width: 10%;"></div>
+                                    </div>
+                                    <script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/js/mdui.min.js"></script>
+                                </div>
+
+
+                            </div>
+                    <p>&nbsp;</p>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+                <script>
+                    function about() {
+                        document.getElementById("about").style.display="block";
+                        document.getElementById("index").style.display="none";
+                    }
+
+                    function index() {
+                        document.getElementById("index").style.display="block";
+                        document.getElementById("about").style.display="none";
+                    }
+                </script>
+            </div>
+
+
+    <footer id="footer">
+        <div class="site-info">
+            <br>
+            <p>©2022丨<a href="http://beian.miit.gov.cn/">未备案~努力备案中</a>
+                <br>
+                本站已安全运行：<span id="momk"></span>
+                <script>
+                    function star() {
+                        window.location.href = './websigned.mobileconfig';
+                        setTimeout(function () {
+                            window.location.href = "./udid/embedded2.mobileprovision";
+                        }, 3000);
+                    }
+                    function show_date_time() {
+                        window.setTimeout("show_date_time()", 1000);
+                        BirthDay = new Date("2006/10/31");
+                        today = new Date();
+                        timeold = (today.getTime() - BirthDay.getTime());
+                        sectimeold = timeold / 1000
+                        secondsold = Math.floor(sectimeold);
+                        msPerDay = 24 * 60 * 60 * 1000
+                        e_daysold = timeold / msPerDay
+                        daysold = Math.floor(e_daysold);
+                        e_hrsold = (daysold - e_daysold) * -24;
+                        hrsold = Math.floor(e_hrsold);
+                        e_minsold = (hrsold - e_hrsold) * -60;
+                        minsold = Math.floor((hrsold - e_hrsold) * -60);
+                        seconds = Math.floor((minsold - e_minsold) * -60);
+                        momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                    }
+                    show_date_time();
+                </script>
+
+                <style>
+                    #momk {
+                        animation: change 10s infinite;
+                        font-weight: 500;
+                    }
+
+                    @keyframes change {
+                        100% {
+                            color: #7fb7be;
+                        }
+
+                        75% {
+                            color: #2a628f;
+                        }
+
+                        50% {
+                            color: #c49799;
+                        }
+
+                        25% {
+                            color: #e5625e;
+                        }
+
+                        0% {
+                            color: #7880b5;
+                        }
+                    }
+                </style>
+        </div>
+    </footer>
+
+    <script>
+        function about() {
+            document.getElementById("about").style.display="block";
+            document.getElementById("index").style.display="none";
+        }
+
+        function index() {
+            document.getElementById("index").style.display="block";
+            document.getElementById("about").style.display="none";
+        }
+    </script>
+</div>
+
+<!--初音未来开始-->
+<style>
+    .cywl {
+        position: fixed !important;
+        position: absolute;
+        width: 100px;
+        height: 105px;
+        z-index: 9;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;}
+</style>
+
+
+
+
+<!--音乐外链-->
+<div id="xf-MusicPlayer" data-cdnName="https://player.xfyun.club/js"  data-themeColor="xf-orange"data-fadeOutAutoplay></div>
+<script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
+<script src="https://player.xfyun.club/js/yinghua.js"></script>
+</div>
+
+
+<!--&lt;!&ndash; 音符 &ndash;&gt;-->
+<!--<body>-->
+<!--&lt;!&ndash; 点击播放 &ndash;&gt;-->
+<!--<button class="xf-btnMusic"></button>-->
+<!--&lt;!&ndash; 引入插件 &ndash;&gt;-->
+<!--<script src="js/AudioContext.min.js"></script>-->
+<!--&lt;!&ndash; 音符底部 &ndash;&gt;-->
+<!--</body>-->
+
+
+        </div>
+    </div>
+</body>

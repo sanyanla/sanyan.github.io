@@ -1,0 +1,197 @@
+<!--如若侵权，请联系站长删除-->
+<!--致敬小宜技术猫-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>三乄言引导页</title>
+    <meta name="viewport" content="width=device-100,initial-scale=1">
+
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>三乄言引导页</title>
+</head>
+
+
+
+<!--鼠标点击特效-->
+
+<script>
+    const fnTextPopup = function (arr, options) {
+        // arr参数是必须的
+        if (!arr || !arr.length) {
+            return;
+        }
+        // 主逻辑
+        let index = 0;
+        document.documentElement.addEventListener('click', function (event) {
+            const x = event.pageX, y = event.pageY;
+            const eleText = document.createElement('span');
+            eleText.className = 'text-popup';
+            this.appendChild(eleText);
+            if (arr[index]) {
+                eleText.innerHTML = arr[index];
+            } else {
+                index = 0;
+                eleText.innerHTML = arr[0];
+            }
+            // 动画结束后删除自己
+            eleText.addEventListener('animationend', function () {
+                eleText.parentNode.removeChild(eleText);
+            });
+            // 位置
+            eleText.style.left = (x - eleText.clientWidth / 2) + 'px';
+            eleText.style.top = (y - eleText.clientHeight) + 'px';
+            // index递增
+            index++;
+        });
+    };
+    fnTextPopup(['富强', '民主', '文明', '和谐', '自由', '平等', '公正', '法治', '爱国', '敬业', '诚信', '友善']);
+</script>
+<!--鼠标点击特效底部-->
+
+<!--鼠标点击特效-->
+<!--方法1：调用自己下载下来的代码-->
+<script type="text/javascript" src="js/mouse_slide.js"></script>
+
+<!--&lt;!&ndash;方法2：直接引用服务器上的代码&ndash;&gt;-->
+<!--<script type="text/javascript" src="https://www.liuzehe.top/upload/bkjs/mouse_slide.js"></script>-->
+<!--鼠标点击特效底部-->
+
+
+
+
+
+
+    <!--右侧背景-->
+<style type="text/css">
+    body {
+        background-image: url(Image/image.png);
+    }、0
+</style>
+<!--右侧背景底部-->
+
+
+
+
+<!--当前时间-->
+<section class="azpay1959-9b9d-fbae-88af widget" id="dtime">
+    <h3 class="azpay9b9d-fbae-88af-5801 widget-title">当前时间</h3>
+
+    <div class="azpayfbae-88af-5801-12ed widget-box dtime">
+        <div class="azpay88af-5801-12ed-2a39 card-content">
+            <canvas id="canvas" style="width:100%;" width="820" height="250"></canvas>
+            <script src="js/dtimetime.js"></script>
+        </div>
+    </div>
+</section>
+<!--当前时间底部-->
+
+<!--天气美化 -->
+<section class="azpay1959-9b9d-fbae-88af widget" id="dtime1">
+    <h3 class="azpay9b9d-fbae-88af-5801 widget-title">天气</h3>
+    <!--天气-->
+    <iframe width="360" scrolling="no" height="150" frameborder="0" allowtransparency="true" src="https://i.tianqi.com?c=code&id=48&icon=1&py=beijing=6&site=12"></iframe>
+    <!--天气底部-->
+    <div class="azpayfbae-88af-5801-12ed widget-box dtime">
+        <div class="azpay88af-5801-12ed-2a39 card-content">
+
+            <script src="js/dtimetime.js"></script>
+        </div>
+    </div>
+</section>
+<!--当前时间底部-->
+
+
+
+<!--苹果美化框-->
+<style type>
+    body.home {
+        background-color: #ffffff;
+    }
+
+    .single.box-show,.homedia,.search-null,.side-brick,.box-show,.post-list,.post-list,.widget,#primary,.line-box,.link-box,.ads,.top_list,.navcates {
+        background-color: rgba(255,255,255,0.95);
+    }
+    /*不能删，删了红点乱跑*/
+    .single.box-show,.post-list,.widget,#primary,.line-box,.link-box {
+        background-image: url(Image/云朵.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 600px;
+        border-top-width: 0;
+    }
+</style>
+
+
+<p>&nbsp;</p>
+</div>
+</html>
+
+<!-- 人生倒计时代码 -->
+<div class="sidebar-box classListBox">
+    <div class="aside aside-count">
+        <div class="p-3"><span style="font-size: 1.2em; color: orange;"><i class="fa fa-hourglass-half"></i></span> 人生倒计时</div>
+        <div class="content">
+            <div class="item" id="dayProgress">
+                <div class="title">今日已经过去<span></span>小时</div>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-inner progress-inner-1"></div>
+                    </div>
+                    <div class="progress-percentage"></div>
+                </div>
+            </div>
+            <div class="item" id="weekProgress">
+                <div class="title">这周已经过去<span></span>天</div>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-inner progress-inner-2"></div>
+                    </div>
+                    <div class="progress-percentage"></div>
+                </div>
+            </div>
+            <div class="item" id="monthProgress">
+                <div class="title">本月已经过去<span></span>天</div>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-inner progress-inner-3"></div>
+                    </div>
+                    <div class="progress-percentage"></div>
+                </div>
+            </div>
+            <div class="item" id="yearProgress">
+                <div class="title">今年已经过去<span></span>个月</div>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-inner progress-inner-4"></div>
+                    </div>
+                    <div class="progress-percentage"></div>
+                    <!--苹果美化框-->
+                    <style type>
+                        body.home {
+                            background-color: #ffffff;
+                        }
+
+                        .single.box-show,.homedia,.search-null,.side-brick,.box-show,.post-list,.post-list,.widget,#primary,.line-box,.link-box,.ads,.top_list,.navcates {
+                            background-color: rgba(255,255,255,0.95);
+                        }
+                        /*不能删，删了红点乱跑*/
+                        .single.box-show,.post-list,.widget,#primary,.line-box,.link-box {
+                            background-image: url(Image/云朵.png);
+                            position: relative;
+                            background-repeat: no-repeat;
+                            background-position: right top;
+                            background-size: 600px;
+                            border-top-width: 0;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 倒计时引用的JS -->
+<script src="https://www.liuzehe.top/upload/bkjs/timeinfo.js"></script>
