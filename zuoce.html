@@ -18,6 +18,8 @@
 </head>
 
 
+
+
 <!--鼠标点击特效-->
 
 <script>
@@ -378,7 +380,7 @@
                 <i class="iconfont icon-Artboard1"></i>
                 <strong>三乄言 </strong>
                 <span>介绍</span>
-
+                <p>用代码表达言语的魅力,用代码书写山河的壮丽...</p>
 
                 <i class="iconfont icon-Artboard"></i>
             </div>
@@ -387,7 +389,27 @@
                     <span>说说</span>
                 </div>
                 <div class="markdown index">
-                    <p>All beginnings come at the expense of the end, why not look at the prosperity of the world?</p>
+                    <p>All beginnings come at the cost of ends, and each end is the starting point of a new journey.</p>
+<!--                    一言-->
+                    <font size="1">
+                    <p>随机一言：
+                    <p id="hitokoto">
+                        <a href="#" id="hitokoto_text">用代码表达言语的魅力,用代码书写山河的壮丽...</a>
+                    </p>
+                    <script>
+                        fetch('https://v1.hitokoto.cn')
+                            .then(response => response.json())
+                            .then(data => {
+
+                                const hitokoto =  document.querySelector('#hitokoto_text')
+                                hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+                                hitokoto.innerText = data.hitokoto
+                            })
+                            .catch(console.error)
+                    </script>
+                        </font>
+
+                    <!--                    一言底部-->
                 </div>
             </div>
 
@@ -500,10 +522,13 @@
                                     </div>
                                     <script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/js/mdui.min.js"></script>
                                 </div>
-
-
                             </div>
-                    <p>&nbsp;</p>
+<p>
+                            <p>   <a target="_blank" href="待开发">
+                                <img border="0" src="https://www.dmoe.cc/random.php" alt="Magisk/Taichi/LSP模块交流" title="待开发"></a></a></p>
+
+
+                            <p>&nbsp;</p>
 
 
                 </div>
@@ -511,6 +536,10 @@
 
         </div>
     </div>
+
+
+
+
 
                 <script>
                     function about() {
